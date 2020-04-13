@@ -13,6 +13,7 @@
 >4. Model
 >> ng create class ```<Class Name>```/
 >> ng g c ```<Class Name>```
+
 ## Projects
 > 1. ### angular-tour-of-heroes
 >> Basic for in this

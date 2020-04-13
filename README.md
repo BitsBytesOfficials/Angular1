@@ -6,12 +6,12 @@
 >>ng new ```<ProjectName>```
 > 2. Create Component 
 >> ng generate component ```<Component Name>```/
->> ng g c ```<Component Name>```
+>> ng generate c ```<Component Name>```
 >3. Services 
->> ng create service ```<Service Name>```/
+>> ng generate service ```<Service Name>```/
 >> ng g service ```<service name>```
 >4. Model
->> ng create class ```<Class Name>```/
+>> ng generate class ```<Class Name>```/
 >> ng g c ```<Class Name>```
 
 ## Projects

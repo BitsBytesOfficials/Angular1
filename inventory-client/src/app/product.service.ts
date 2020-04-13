@@ -20,4 +20,7 @@ export class ProductService {
   getProductsList():Observable<any>{   //call get method of product
     return this.http.get(`${this.baseUrl}`);
   }
+  getProduct(id:number):Observable<any>{
+    return this.http.get('${this.baseUrl}${id}');
+  }
 }

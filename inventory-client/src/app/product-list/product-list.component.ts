@@ -26,10 +26,11 @@ export class ProductListComponent implements OnInit {
   productDetails(id: number) {
     this.router.navigate(['details', id])
   }
-  deleteProduct(id: number) {
-    this.router.navigate(['details', id])
-  }
+
   editProduct(id: number) {
     this.router.navigate(['update', id])
+  }
+  deleteProduct(id: number) {
+    this.productService.deleteProduct(id).subscribe(data => { console.log(data); this.reloadData(); }, error => console.log(error));
   }
 }

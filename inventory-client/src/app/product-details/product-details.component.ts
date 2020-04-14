@@ -23,7 +23,12 @@ export class ProductDetailsComponent implements OnInit {
     this.product = new Product();
 
     this.id = this.route.snapshot.params['id'];
-
+/**
+ * As a publisher, you create an Observable instance that defines a subscriber function.
+ *  This is the function that is executed when a consumer calls the subscribe() method.
+ * The subscriber function defines how to obtain or generate values or messages to be published.
+ *
+ */
     this.productService.getProduct(this.id)
       .subscribe(data => {
         console.log(data)

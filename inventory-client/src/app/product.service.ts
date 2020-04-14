@@ -26,4 +26,9 @@ export class ProductService {
     newProduct(product: Object): Observable<Object> {
       return this.http.post(`${this.baseUrl}`, product);
       }
+
+      updateProduct(id: number, value: any): Observable<Object> {
+        return this.http.put(`${this.baseUrl}/${id}`, value);
+      }
+
 }
